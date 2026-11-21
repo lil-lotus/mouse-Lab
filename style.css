@@ -315,54 +315,55 @@ body {
   border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-/* ===== 特别样式光标定义 (复用类名，同时作用于卡片和预览区) ===== */
-.cursor-magic { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="rgba(138,43,226,0.9)"/><circle cx="16" cy="16" r="8" fill="rgba(255,255,255,0.4)"/><circle cx="16" cy="16" r="4" fill="white"/><circle cx="12" cy="12" r="2" fill="rgba(255,255,255,0.7)"/></svg>') 16 16, auto; }
-.special-card.cursor-magic:hover { box-shadow: 0 15px 40px rgba(138,43,226,0.4); border-color: rgba(138,43,226,0.5); }
+/* ===== 特别样式光标 ===== */
+.special-card.magic { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="rgba(138,43,226,0.9)"/><circle cx="16" cy="16" r="8" fill="rgba(255,255,255,0.4)"/><circle cx="16" cy="16" r="4" fill="white"/><circle cx="12" cy="12" r="2" fill="rgba(255,255,255,0.7)"/></svg>') 16 16, auto; }
+.special-card.magic:hover { box-shadow: 0 15px 40px rgba(138,43,226,0.4); border-color: rgba(138,43,226,0.5); }
 
-.cursor-spin { cursor: wait; }
-.special-card.cursor-spin .card-icon { animation: spin 1.5s linear infinite; }
+.special-card.spin { cursor: wait; }
+.special-card.spin .card-icon { animation: spin 1.5s linear infinite; }
+
 @keyframes spin { to { transform: rotate(360deg); } }
 
-.cursor-pixel { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><polygon points="0,24 8,0 16,20 24,8 12,24" fill="%2300ff88"/></svg>') 12 12, auto; }
-.special-card.cursor-pixel:hover { box-shadow: 0 15px 35px rgba(0,255,136,0.3); border-color: rgba(0,255,136,0.4); }
+.special-card.pixel { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><polygon points="0,24 8,0 16,20 24,8 12,24" fill="%2300ff88"/></svg>') 12 12, auto; }
+.special-card.pixel:hover { box-shadow: 0 15px 35px rgba(0,255,136,0.3); border-color: rgba(0,255,136,0.4); }
 
-.cursor-rainbow { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23ff0000"/><stop offset="33%" stop-color="%23ffff00"/><stop offset="66%" stop-color="%2300ff00"/><stop offset="100%" stop-color="%230000ff"/></linearGradient></defs><circle cx="14" cy="14" r="12" fill="url(%23g)"/></svg>') 14 14, auto; }
-.special-card.cursor-rainbow:hover { box-shadow: 0 15px 40px rgba(255,100,0,0.3); border-color: rgba(255,200,0,0.4); }
+.special-card.rainbow { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23ff0000"/><stop offset="33%" stop-color="%23ffff00"/><stop offset="66%" stop-color="%2300ff00"/><stop offset="100%" stop-color="%230000ff"/></linearGradient></defs><circle cx="14" cy="14" r="12" fill="url(%23g)"/></svg>') 14 14, auto; }
+.special-card.rainbow:hover { box-shadow: 0 15px 40px rgba(255,100,0,0.3); border-color: rgba(255,200,0,0.4); }
 
-.cursor-fire { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32"><defs><linearGradient id="fire" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="%23ff4500"/><stop offset="50%" stop-color="%23ff8c00"/><stop offset="100%" stop-color="%23ffd700"/></linearGradient></defs><path d="M12 0 Q4 12 8 20 Q12 32 16 20 Q20 12 12 0Z" fill="url(%23fire)"/></svg>') 12 0, auto; }
-.special-card.cursor-fire:hover { box-shadow: 0 15px 40px rgba(255,69,0,0.4); border-color: rgba(255,100,0,0.5); }
+.special-card.fire { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32"><defs><linearGradient id="fire" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="%23ff4500"/><stop offset="50%" stop-color="%23ff8c00"/><stop offset="100%" stop-color="%23ffd700"/></linearGradient></defs><path d="M12 0 Q4 12 8 20 Q12 32 16 20 Q20 12 12 0Z" fill="url(%23fire)"/></svg>') 12 0, auto; }
+.special-card.fire:hover { box-shadow: 0 15px 40px rgba(255,69,0,0.4); border-color: rgba(255,100,0,0.5); }
 
-.cursor-cat { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><ellipse cx="16" cy="22" rx="10" ry="8" fill="%23ffb6c1"/><circle cx="8" cy="14" r="4" fill="%23ffb6c1"/><circle cx="16" cy="10" r="4" fill="%23ffb6c1"/><circle cx="24" cy="14" r="4" fill="%23ffb6c1"/></svg>') 16 28, auto; }
-.special-card.cursor-cat:hover { box-shadow: 0 15px 35px rgba(255,182,193,0.4); border-color: rgba(255,182,193,0.5); }
+.special-card.cat { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><ellipse cx="16" cy="22" rx="10" ry="8" fill="%23ffb6c1"/><circle cx="8" cy="14" r="4" fill="%23ffb6c1"/><circle cx="16" cy="10" r="4" fill="%23ffb6c1"/><circle cx="24" cy="14" r="4" fill="%23ffb6c1"/></svg>') 16 28, auto; }
+.special-card.cat:hover { box-shadow: 0 15px 35px rgba(255,182,193,0.4); border-color: rgba(255,182,193,0.5); }
 
-.cursor-crosshair { cursor: crosshair; }
-.special-card.cursor-crosshair::after {
+.special-card.crosshair { cursor: crosshair; }
+.special-card.crosshair::after {
   content: '◎';
   position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem; color: rgba(255,0,0,0.6);
   opacity: 0; transition: opacity 0.3s;
 }
-.special-card.cursor-crosshair:hover::after { opacity: 1; }
+.special-card.crosshair:hover::after { opacity: 1; }
 
-.cursor-grab { cursor: grab; }
-.special-card.cursor-grab:active { cursor: grabbing; transform: scale(0.95); }
-.special-card.cursor-grab:hover { box-shadow: 0 15px 35px rgba(100,149,237,0.4); border-color: rgba(100,149,237,0.5); }
+.special-card.grab { cursor: grab; }
+.special-card.grab:active { cursor: grabbing; transform: scale(0.95); }
+.special-card.grab:hover { box-shadow: 0 15px 35px rgba(100,149,237,0.4); border-color: rgba(100,149,237,0.5); }
 
-.cursor-neon { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><circle cx="14" cy="14" r="10" fill="none" stroke="%2300ffff" stroke-width="3"/><circle cx="14" cy="14" r="5" fill="%2300ffff"/><circle cx="14" cy="14" r="2" fill="white"/></svg>') 14 14, auto; }
-.special-card.cursor-neon:hover { box-shadow: 0 15px 40px rgba(0,255,255,0.4); border-color: rgba(0,255,255,0.5); }
+.special-card.neon { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><circle cx="14" cy="14" r="10" fill="none" stroke="%2300ffff" stroke-width="3"/><circle cx="14" cy="14" r="5" fill="%2300ffff"/><circle cx="14" cy="14" r="2" fill="white"/></svg>') 14 14, auto; }
+.special-card.neon:hover { box-shadow: 0 15px 40px rgba(0,255,255,0.4); border-color: rgba(0,255,255,0.5); }
 
-.cursor-heart { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M14 24 C6 18 2 12 6 8 C8 5 12 6 14 10 C16 6 20 5 22 8 C26 12 22 18 14 24Z" fill="%23ff4757"/></svg>') 14 24, auto; }
-.special-card.cursor-heart:hover { box-shadow: 0 15px 35px rgba(255,71,87,0.4); border-color: rgba(255,71,87,0.5); }
+.special-card.heart { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M14 24 C6 18 2 12 6 8 C8 5 12 6 14 10 C16 6 20 5 22 8 C26 12 22 18 14 24Z" fill="%23ff4757"/></svg>') 14 24, auto; }
+.special-card.heart:hover { box-shadow: 0 15px 35px rgba(255,71,87,0.4); border-color: rgba(255,71,87,0.5); }
 
-.cursor-dino { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M8 28 L8 16 L4 12 L12 12 L16 8 L20 12 L28 12 L24 16 L24 28 Z" fill="%232ed573"/><circle cx="22" cy="14" r="2" fill="white"/><circle cx="22" cy="14" r="1" fill="black"/></svg>') 16 28, auto; }
-.special-card.cursor-dino:hover { box-shadow: 0 15px 35px rgba(46,213,115,0.4); border-color: rgba(46,213,115,0.5); }
+.special-card.dino { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M8 28 L8 16 L4 12 L12 12 L16 8 L20 12 L28 12 L24 16 L24 28 Z" fill="%232ed573"/><circle cx="22" cy="14" r="2" fill="white"/><circle cx="22" cy="14" r="1" fill="black"/></svg>') 16 28, auto; }
+.special-card.dino:hover { box-shadow: 0 15px 35px rgba(46,213,115,0.4); border-color: rgba(46,213,115,0.5); }
 
-.cursor-star { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><polygon points="14,2 17.5,10 26,10 19.5,15 22,24 14,19 6,24 8.5,15 2,10 10.5,10" fill="%23ffd700"/></svg>') 14 14, auto; }
-.special-card.cursor-star:hover { box-shadow: 0 15px 35px rgba(255,215,0,0.4); border-color: rgba(255,215,0,0.5); }
+.special-card.star { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><polygon points="14,2 17.5,10 26,10 19.5,15 22,24 14,19 6,24 8.5,15 2,10 10.5,10" fill="%23ffd700"/></svg>') 14 14, auto; }
+.special-card.star:hover { box-shadow: 0 15px 35px rgba(255,215,0,0.4); border-color: rgba(255,215,0,0.5); }
 
-.cursor-rocket { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="36"><path d="M14 0 L18 12 L22 14 L18 16 L18 28 L14 36 L10 28 L10 16 L6 14 L10 12 Z" fill="%23ff6348"/><circle cx="14" cy="18" r="3" fill="%23ffd700"/></svg>') 14 0, auto; }
-.special-card.cursor-rocket:hover { box-shadow: 0 15px 40px rgba(255,99,72,0.4); border-color: rgba(255,99,72,0.5); }
+.special-card.rocket { cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="36"><path d="M14 0 L18 12 L22 14 L18 16 L18 28 L14 36 L10 28 L10 16 L6 14 L10 12 Z" fill="%23ff6348"/><circle cx="14" cy="18" r="3" fill="%23ffd700"/></svg>') 14 0, auto; }
+.special-card.rocket:hover { box-shadow: 0 15px 40px rgba(255,99,72,0.4); border-color: rgba(255,99,72,0.5); }
 
 /* ===== 响应式 ===== */
 @media (max-width: 900px) {
