@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  🔗 <b>在线体验：</b> <a href="https://你的用户名.github.io/你的仓库名/">👉 点击这里进入实验室！</a>
+  🔗 <b>在线体验：</b> <a href="https://lil-lotus.github.io/mouse-Lab/">👉 点击这里进入实验室！</a>
 </p>
 
 ---
@@ -53,4 +53,4 @@
 
 1. **克隆仓库**：
    ```bash
-   git clone https://lil-lotus.github.io/mouse-Lab/
+   git clone https://github.com/lil-lotus/mouse-Lab
